@@ -1,0 +1,18 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "cd Frontend/npm start": {
+      "name": "cd Frontend/npm start",
+      "command": "cd Frontend/npm start",
+      "runAtStart": true
+    },
+    "cd Backend/npm start": {
+      "name": "cd Backend/npm start",
+      "command": "cd Backend/npm start",
+      "runAtStart": true
+    }
+  }
+}
