@@ -8,7 +8,6 @@ const product = require("../models/products");
 // Route to post products details
 
 
-
 productsRoute.post("/", async (req, res) => {
   try {
     const { name, device, genre, released, popularity, rating, price } = req.body;
