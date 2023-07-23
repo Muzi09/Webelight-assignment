@@ -8,6 +8,11 @@
       "name": "cd Frontend/npm start",
       "command": "cd Frontend/npm start",
       "runAtStart": true
+    },
+    "cd Backend/npm start": {
+      "name": "cd Backend/npm start",
+      "command": "cd Backend/npm start",
+      "runAtStart": true
     }
   }
 }
