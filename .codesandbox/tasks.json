@@ -1,10 +1,6 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": ["cd Backend",
-   "npm install",
-    "cd .." ,
-    "cd Frontend",
-    "npm install"],
+  "setupTasks": ["npm install"],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
