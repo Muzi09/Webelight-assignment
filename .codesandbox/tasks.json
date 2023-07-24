@@ -4,6 +4,7 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
+    // Start Frontend
     "Frontend": {
       "name": "Start Frontend",
       "command": "cd Frontend; npm install && npm start",
@@ -13,6 +14,7 @@
       }
     },
     "Backend": {
+      // Start Backend
       "name": "Start Backend",
       "command": "cd Backend; npm install && npm start",
       "runAtStart": true,
