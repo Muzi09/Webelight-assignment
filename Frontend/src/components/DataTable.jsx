@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaPlus, FaTrash } from "react-icons/fa";
+import { PacmanLoader } from 'react-spinners';
 
 import Navbar from "../components/Navbar";
 import Filter from "../components/Filter";
@@ -21,6 +22,8 @@ const img = [game1, game2, game3, game4, game5, game6, game7, game8, game9]; // 
 
 function DataTable() {
   const [products, setProducts] = useState(null);
+  const [loading, setLoading] = useState(true)
+
   const [filteredProducts, setFilteredProducts] = useState(null);
 
   const category = useSelector((state) => state.filter.category);
@@ -38,6 +41,7 @@ function DataTable() {
         })
 
         setProducts(res.data);
+        setLoading(false)
       })
       .catch((err) => {
         console.log(err);
@@ -89,6 +93,13 @@ function DataTable() {
     <div>
       <Navbar />
       <Filter />
+      {loading && 
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <PacmanLoader color="black" size={40} />
+        </div>
+        </div>
+      }
       <div className="d-flex flex-wrap justify-content-evenly mx-2">
         {filteredProducts &&
           filteredProducts.map((product) => {

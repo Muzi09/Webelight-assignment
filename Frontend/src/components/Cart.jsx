@@ -48,6 +48,10 @@ function Cart() {
       </button>
 
       {alert && <Alert message={"Your purchase was successfull"}/>}
+      
+      {!cart[0] && !alert &&
+        <h3 className="text-center">Your cart is empty</h3>
+      }
 
       {cart[0] && (
         <div>
