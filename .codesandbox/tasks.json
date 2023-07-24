@@ -4,15 +4,23 @@
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
-    "cd Frontend/npm start": {
-      "name": "cd Frontend/npm start",
-      "command": "cd Frontend/npm start",
-      "runAtStart": true
+    // Start Frontend
+    "Frontend": {
+      "name": "Start Frontend",
+      "command": "cd Frontend; npm install && npm start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
-    "cd Backend/npm start": {
-      "name": "cd Backend/npm start",
-      "command": "cd Backend/npm start",
-      "runAtStart": true
+    "Backend": {
+      // Start Backend
+      "name": "Start Backend",
+      "command": "cd Backend; npm install && npm start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3001
+      }
     }
   }
 }
