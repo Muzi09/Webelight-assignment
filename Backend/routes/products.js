@@ -2,7 +2,11 @@ const express = require("express");
 const productsRoute = express.Router();
 const product = require("../models/products");
 
+
+
+
 // Route to post products details
+
 
 productsRoute.post("/", async (req, res) => {
   try {
